@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Starter Portfolio: Cara
+  Jiazi Cai | Full-Stack Developer
 </h1>
 
 <p align="center">
@@ -73,7 +73,7 @@ You have to use the `<ProjectCard />` component inside `projects.mdx` to display
 ```md
 ## Projects
 
-<ProjectCard title="Freiheit" link="https://www.behance.net/gallery/58937147/Freiheit" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
+<ProjectCard title="ABreiheit" link="https://www.behance.net/gallery/58937147/Freiheit" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
 This project is my entry to Adobe's #ChallengeYourPerspective contest.
 </ProjectCard>
 ```
