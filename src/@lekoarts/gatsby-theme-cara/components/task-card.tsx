@@ -1,6 +1,7 @@
 /** @jsx jsx */
-import React, { Children } from "react"
+import React, {useState, useEffect, useRef, Children} from 'react'
 import { jsx } from "theme-ui";
+import "../../../styles/global.css"
 
 type TaskCardProps = {
   link: string
@@ -9,20 +10,21 @@ type TaskCardProps = {
   bg: string
 }
 
-const TaskCard = ({ link, title, children, bg }: TaskCardProps) => (
+
+const TaskCard = ({ link, title, children, bg }: TaskCardProps) => {
+  return (
     <a
     href={link}
     target="_blank"
     rel="noreferrer noopener"
+    className="wholeCard"
     sx={{
       width: `100%`,
-      minHeight: `450px`,
+      height: `400px`,
       boxShadow: `lg`,
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,
-      px: 3,
-      py: [4, 4],
       color: `white`,
       background: bg || `none`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -34,7 +36,7 @@ const TaskCard = ({ link, title, children, bg }: TaskCardProps) => (
     }}
   >
 
-    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`, fontSize: `1.25rem` }}>{children}</div>
+    <div sx={{ textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`, fontSize: `1.25rem` }}>{children}</div>
     <div
       sx={{
         textTransform: `uppercase`,
@@ -49,5 +51,6 @@ const TaskCard = ({ link, title, children, bg }: TaskCardProps) => (
     </div>
   </a>
 )
+    }
 
 export default TaskCard

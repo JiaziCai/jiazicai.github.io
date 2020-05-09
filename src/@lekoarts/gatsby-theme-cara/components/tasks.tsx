@@ -128,24 +128,13 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             display: `grid`,
             gridGap: [4, 4, 4, 5],
             gridTemplateColumns: [`repeat(auto-fit, minmax(320px, 1fr))`],
-            h2: { gridColumn: `-1/1`, color: `white !important` },
+            h2: { gridColumn: `-1/1`, color: `white !important`, paddingLeft:`2rem` },
+            justifyContent:`center`
           }}
         >
             <TaskMDX />
             {dataPlaylists.map((playlist, id) => (
             <TaskCard bg="linear-gradient(to right, #0d7be3 0%, #4335a4 100%)" playlist={playlist} id={playlist.id}>
-            {/* <div className={`card ${flip ? 'flip' : ''}`}
-            onClick={() => setFlip(!flip)} key={id}>
-                    <div className="cardImage" style={{ justifyContent: "center",
-    display: "flex"}}>
-                        <img src={playlist.image} height="163.8" width="287.4" alt="Pic 1"/>
-                    </div>
-                    <div className="cardContent" style={{paddingLeft:'1.5rem'}}>
-                        <h3 style={{marginBottom:'0'}}>{playlist.name}</h3>
-                        <span>{playlist.info}</span>
-                    </div>
-                    <div className="back" ref={backEl}>{playlist.answer}</div>
-                </div>  */}
                 <SingleTask playlist={playlist} id={playlist.id} />
             </TaskCard>
         ))}
@@ -166,6 +155,9 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         <SVG icon="triangle" hiddenMobile width={16} stroke color="icon_teal" left="18%" top="75%" />
         <SVG icon="circle" width={6} color="icon_brightest" left="75%" top="10%" />
         <SVG icon="upDown" hiddenMobile width={8} color="icon_green" left="45%" top="10%" />
+        <SVG icon="arrowDown" hiddenMobile width={32} color="icon_blue" left="75%" top="95%" />
+        <SVG icon="arrowDown" hiddenMobile width={32} color="icon_blue" left="75%" top="98%" />
+        <SVG icon="upDown" hiddenMobile width={32} color="icon_pink" left="45%" top="98%" />
       </UpDownWide>
       <SVG icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <SVG icon="circle" width={12} color="icon_pink" left="80%" top="60%" />
@@ -173,6 +165,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       <SVG icon="box" width={12} color="icon_yellow" left="29%" top="26%" />
       <SVG icon="hexa" width={16} stroke color="icon_red" left="75%" top="30%" />
       <SVG icon="hexa" width={8} stroke color="icon_yellow" left="80%" top="70%" />
+      <SVG icon="hexa" width={8} stroke color="icon_red" left="60%" top="80%" />
     </Divider>
   </div>
 )

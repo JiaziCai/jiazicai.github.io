@@ -4,6 +4,8 @@
     transform-style: preserve-3d;
     transition: 150ms;
     cursor: pointer;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -19,6 +21,9 @@
 .card .front,
 .card .back {
     position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
     padding: 1rem;
     font-size: 1.5rem;
     backface-visibility: hidden;
@@ -35,4 +40,38 @@
 
 .card.flip .cardImage{
     display: none !important;
+}
+
+.cardContainer {
+    max-width: 287.4px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 380px;
+}
+
+.website {
+    font-size: 1.24rem;
+    top: 80%;
+}
+
+@media only screen and (max-width:400px) {
+.cardContent span {
+    display: none;
+}
+.wholeCard {
+    height: 260px !important;
+}
+.cardContainer{
+    height: 200px !important;
+}
+.card .front,
+.card .back {
+    font-size: 1.25rem !important;
+}
+.website{
+    font-size: 1rem !important;
+}
+h3 {
+    margin-top: 0.5rem !important;
+}
 }
