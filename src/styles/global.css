@@ -3,7 +3,7 @@
     translateY(var(--translate-y, 0));
     transform-style: preserve-3d;
     transition: 150ms;
-    cursor: pointer;
+    cursor: ew-resize;
     height: 100%;
     width: 100%;
 
@@ -20,6 +20,10 @@
 
 .card .front {
     left: 0;
+}
+
+.card.flip:hover{
+    cursor: ew-resize;
 }
 
 .card .front,
