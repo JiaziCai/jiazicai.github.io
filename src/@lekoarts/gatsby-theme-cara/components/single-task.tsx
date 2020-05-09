@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react'
 import "../../../styles/global.css"
 import { jsx } from "theme-ui";
+import {Animated} from "react-animated-css";
 
 export default function SingleTask({playlist}) {
     const [flip, setFlip] = useState(false);
@@ -10,6 +11,7 @@ export default function SingleTask({playlist}) {
     const backEl = useRef();
 
     return (
+        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
         <div className={`card ${flip ? 'flip' : ''}`}
             onClick={() => setFlip(!flip)} key={playlist.id}
             sx={{px: 3,
@@ -29,13 +31,14 @@ export default function SingleTask({playlist}) {
                     <br/>
                     <br/>
                     <div className="website">
-                    <a href={"https://" + playlist.website} target="_blank">{playlist.website}</a>
+                    <a class="web" href={"https://" + playlist.website} target="_blank">{playlist.website}</a>
                     <br/>
-                    <a href={"https://" + playlist.github} target="_blank">{playlist.github}</a>
+                    <a class="git" href={"https://" + playlist.github} target="_blank">{playlist.github}</a>
                     </div>
                     </div>
                     </div>
                 </div>
+                </Animated>
     )
 }
 

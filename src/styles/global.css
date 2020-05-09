@@ -9,6 +9,10 @@
 
 }
 
+.back{
+    padding: 2rem !important;
+}
+
 
 .card.flip {
     --rotate-y: 180deg;
@@ -20,9 +24,9 @@
 
 .card .front,
 .card .back {
-    position: absolute;
     top: 0px;
     left: 0px;
+    position: absolute;
     height: 100px;
     padding: 1rem;
     font-size: 1.5rem;
@@ -54,7 +58,14 @@
     top: 80%;
 }
 
-@media only screen and (max-width:400px) {
+
+
+
+.website a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px) {
 .cardContent span {
     display: none;
 }
