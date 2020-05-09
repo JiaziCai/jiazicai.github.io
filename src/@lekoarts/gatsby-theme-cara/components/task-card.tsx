@@ -13,10 +13,7 @@ type TaskCardProps = {
 
 const TaskCard = ({ link, title, children, bg }: TaskCardProps) => {
   return (
-    <a
-    href={link}
-    target="_blank"
-    rel="noreferrer noopener"
+    <div
     className="wholeCard"
     sx={{
       width: `100%`,
@@ -49,7 +46,7 @@ const TaskCard = ({ link, title, children, bg }: TaskCardProps) => {
     >
       <div>{title}</div>
     </div>
-  </a>
+  </div>
 )
     }
 

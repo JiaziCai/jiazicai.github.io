@@ -11,15 +11,11 @@ export default function SingleTask({playlist}) {
     const backEl = useRef();
 
     return (
-        <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-        <div className={`card ${flip ? 'flip' : ''}`}
-            onClick={() => setFlip(!flip)} key={playlist.id}
-            sx={{px: 3,
-                py: [4, 4],}}
-                style={{paddingTop:'2rem'}}
-                >
-                <div className="cardContainer">
-                    <div className="cardImage" style={{ justifyContent: "center",
+        <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <div className="cardContainer">
+          <div className="cardImage" style={{ justifyContent: "center",
     display: "flex"}}>
                         <img src={playlist.image} height="163.8" width="287.4" alt="Pic 1"/>
                     </div>
@@ -27,18 +23,24 @@ export default function SingleTask({playlist}) {
                         <h3 style={{marginBottom:'0'}}>{playlist.name}</h3>
                         <span>{playlist.info}</span>
                     </div>
-                    <div className="back" ref={backEl}>{playlist.answer}
-                    <br/>
+                    </div>
+          </div>
+          <div className="flip-card-back">
+          <div className="back" ref={backEl}>{playlist.answer}
                     <br/>
                     <div className="website">
-                    <a class="web" href={"https://" + playlist.website} target="_blank">{playlist.website}</a>
-                    <br/>
-                    <a class="git" href={"https://" + playlist.github} target="_blank">{playlist.github}</a>
+                        <div style={{display:"flex", justifyContent:"flex-start"}}>
+                    <a class="web" href={"https://" + playlist.website} target="_blank"><button className="linkButton">Website</button></a>
                     </div>
+                    {playlist.github && (<div style={{display:"flex", justifyContent:"flex-end"}}>
+                    <a class="git" href={"https://" + playlist.github} target="_blank"><button className="linkButton">Github</button></a>
                     </div>
+                    )}
                     </div>
-                </div>
-                </Animated>
+                    </div> 
+          </div>
+        </div>
+      </div>
     )
 }
 
