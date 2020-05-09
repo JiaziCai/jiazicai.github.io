@@ -21,7 +21,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
   return (
   <div>
     <button
-        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mt:5 }}
+        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mt:4 }}
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"

@@ -9,12 +9,11 @@ import Tasks from "../components/tasks"
 
 const Cara = () => (
   <Layout>
-    <Parallax pages={11}>
+    <Parallax pages={7}>
       <Hero offset={0} factor={1} />
-      <Tasks offset={2.1} factor={3} />
-      <Projects offset={5.3} factor={2} />
-      <About offset={8.3} factor={2} />
-      <Contact offset={10} factor={1} />
+      <Tasks offset={2} factor={3} />
+      <About offset={5} factor={1.5} />
+      <Contact offset={6} factor={1} />
     </Parallax>
   </Layout>
 )

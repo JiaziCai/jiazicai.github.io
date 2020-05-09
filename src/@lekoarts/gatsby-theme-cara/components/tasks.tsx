@@ -16,74 +16,65 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         {
             id: 101,
             category_id: 1,
-            name: 'Home playlist 1',
+            name: 'ALIVE',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970799/al_h7qvru.png",
+            info:"Developing E-learning platform for New York University with MERN stack",
         },
         {
             id: 102,
             category_id: 1,
-            name: 'Home playlist 2',
-            image: 'https://res.cloudinary.com/firebeat/image/upload/v1588970796/fc_ehff3b.png'
+            name: 'Fruit Chat',
+            image: 'https://res.cloudinary.com/firebeat/image/upload/v1588970796/fc_ehff3b.png',
+            info: "MERN stack project for chat web application",
         },
         {
             id: 103,
             category_id: 2,
-            name: 'Home playlist 3',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/tdl_jfukq6.png"
+            name: 'To Do List',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/tdl_jfukq6.png",
+            info: "Add/delete task, categorize task, light/dark mode, accessibility, quick add task"
         },
         {
             id: 104,
             category_id: 1,
-            name: 'Focus playlist 1',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970804/pl_ughfk1.png"
+            name: 'Pixaland',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970804/pl_ughfk1.png",
+            info: "Upload photo, search photo, add photographer, search photographer"
         },
         {
             id: 105,
             category_id: 2,
-            name: 'Sunday playlist',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/sr_ousygu.png"
+            name: 'Shop Ramen',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/sr_ousygu.png",
+            info: "Dynamic and responsive shopping website"
         },
         {
             id: 106,
             category_id: 3,
-            name: 'Mood playlist 1',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970798/cv_hrd5w9.png"
+            name: 'COVID Tracker',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970798/cv_hrd5w9.png",
+            info: "Used REST API to fetch data and Chart.js to display COVID-19 data"
         },
         {
             id: 107,
             category_id: 3,
-            name: 'Mood playlist 2',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970800/qg_utwd63.png"
+            name: 'Quiz Generator',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970800/qg_utwd63.png",
+            info: "Used REST API to generate quiz by category and number"
         },
         {
             id: 108,
             category_id: 1,
-            name: 'Home playlist 1',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970801/sd_fknxsx.png"
+            name: 'Spotify Redesign',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970801/sd_fknxsx.png",
+            info: "Cloned Spotify's design"
         },
         {
             id: 109,
             category_id: 1,
-            name: 'Home playlist 1',
-            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970806/mf_wuqqle.png"
-        },
-        {
-            id: 110,
-            category_id: 1,
-            name: 'Home playlist 1',
-            image:"https://res.cloudinary.com/firebeat/image/upload/v1588970804/fb_slggsy.png"
-        },
-        {
-            id: 111,
-            category_id: 1,
-            name: 'Home playlist 1',
-            image:"https://res.cloudinary.com/firebeat/image/upload/v1588970804/fb_slggsy.png"
-        },
-        {
-            id: 112,
-            category_id: 1,
-            name: 'Home playlist 1',
-            image:"https://res.cloudinary.com/firebeat/image/upload/v1588970804/fb_slggsy.png"
+            name: 'Miniflix',
+            image: "https://res.cloudinary.com/firebeat/image/upload/v1588970806/mf_wuqqle.png",
+            info: "Isomorphic and responsive design web pages of Netflix"
         },
     ]
     return (
@@ -113,9 +104,9 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
     display: "flex"}}>
                         <img src={playlist.image} height="163.8" width="287.4" alt="Pic 1"/>
                     </div>
-                    <div className="cardContent">
-                        <h3>{playlist.name}</h3>
-                        <span>Minimalism, electronica and modern...</span>
+                    <div className="cardContent" style={{paddingLeft:'1.5rem'}}>
+                        <h3 style={{marginBottom:'0'}}>{playlist.name}</h3>
+                        <span>{playlist.info}</span>
                     </div>
                 </div> 
             </TaskCard>
