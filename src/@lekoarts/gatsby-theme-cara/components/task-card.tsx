@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React, { Children } from "react"
 import { jsx } from "theme-ui";
-import Alive from "../../../../public/images/al.png"
 
 type TaskCardProps = {
   link: string
@@ -17,6 +16,7 @@ const TaskCard = ({ link, title, children, bg }: TaskCardProps) => (
     rel="noreferrer noopener"
     sx={{
       width: `100%`,
+      minHeight: `450px`,
       boxShadow: `lg`,
       position: `relative`,
       textDecoration: `none`,
@@ -30,7 +30,6 @@ const TaskCard = ({ link, title, children, bg }: TaskCardProps) => (
         color: `white !important`,
         transform: `translateY(-15px)`,
         boxShadow: `xl`,
-        opacity:`0.5`
       },
     }}
   >

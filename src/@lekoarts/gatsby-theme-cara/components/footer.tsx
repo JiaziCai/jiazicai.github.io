@@ -10,16 +10,6 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      {/* <button
-        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
-        onClick={toggleColorMode}
-        type="button"
-        aria-label="Toggle dark mode"
-      >
-        {isDark ? `Light Mode` : `Dark Mode`}
-      </button>
-      Copyright &copy; {new Date().getFullYear()}. Made with Gatsby.
-      <br /> */}
     </Box>
   )
 }

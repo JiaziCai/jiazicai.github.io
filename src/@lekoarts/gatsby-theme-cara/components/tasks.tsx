@@ -10,8 +10,16 @@ import Alive from "../../../../public/images/al.png"
 import TaskCard from "./task-card";
 import TaskMDX from "../sections/tasks";
 import { Children } from "react"
+import React, {useState, useEffect, useRef} from 'react'
+import "../../../styles/global.css"
+import SingleTask from "./single-task"
 
 const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
+    const [flip, setFlip] = useState(false);
+    const [height, setHeight] = useState('initial');
+
+    const frontEl = useRef();
+    const backEl = useRef();
     const dataPlaylists = [
         {
             id: 101,
@@ -19,6 +27,9 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             name: 'ALIVE',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970799/al_h7qvru.png",
             info:"Developing E-learning platform for New York University with MERN stack",
+            answer: "MongoDB, Express, React/Redux, Node, GraphQL",
+            website:"alive.xprss.org",
+            github: "",
         },
         {
             id: 102,
@@ -26,55 +37,79 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             name: 'Fruit Chat',
             image: 'https://res.cloudinary.com/firebeat/image/upload/v1588970796/fc_ehff3b.png',
             info: "MERN stack project for chat web application",
+            answer: "React, Redux, NodeJS, Express, Material UI, Firebase, REST API",
+            website:"jiazi.dev/FruitChat/",
+            github: "github.com/JiaziCai/FruitChat ",
         },
         {
             id: 103,
             category_id: 2,
             name: 'To Do List',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/tdl_jfukq6.png",
-            info: "Add/delete task, categorize task, light/dark mode, accessibility, quick add task"
+            info: "Add/delete task, categorize task, light/dark mode, accessibility, quick add task",
+            answer: "React, Firebase, React Testing Library, SCSS",
+            website:"jiazi.dev/todolist/",
+            github: "github.com/JiaziCai/todolist",
         },
         {
             id: 104,
             category_id: 1,
             name: 'Pixaland',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970804/pl_ughfk1.png",
-            info: "Upload photo, search photo, add photographer, search photographer"
+            info: "Upload photo, search photo, add photographer, search photographer",
+            answer: "Node, MongoDB, EJS, Heroku",
+            website:"pixaland.herokuapp.com",
+            github: "github.com/JiaziCai/pixaland",
         },
         {
             id: 105,
             category_id: 2,
             name: 'Shop Ramen',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/sr_ousygu.png",
-            info: "Dynamic and responsive shopping website"
+            info: "Dynamic and responsive shopping website",
+            answer: "React, Netlify, Bootstrap, Styled-Component",
+            website:"jiazi.dev/Shop-Ramen/",
+            github: "github.com/JiaziCai/Shop-Ramen/",
         },
         {
             id: 106,
             category_id: 3,
             name: 'COVID Tracker',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970798/cv_hrd5w9.png",
-            info: "Used REST API to fetch data and Chart.js to display COVID-19 data"
+            info: "Used REST API to fetch data and Chart.js to display COVID-19 data",
+            answer: "React, REST API, CSS Modules, Chart.js",
+            website:"jiazi.dev/covid-tracker",
+            github: "github.com/JiaziCai/covid-tracker",
         },
         {
             id: 107,
             category_id: 3,
             name: 'Quiz Generator',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970800/qg_utwd63.png",
-            info: "Used REST API to generate quiz by category and number"
+            info: "Used REST API to generate quiz by category and number",
+            answer: "React, REST API, CSS Grid",
+            website:"jiazi.dev/quiz-generator",
+            github: "github.com/JiaziCai/quiz-generator",
         },
         {
             id: 108,
             category_id: 1,
             name: 'Spotify Redesign',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970801/sd_fknxsx.png",
-            info: "Cloned Spotify's design"
+            info: "Cloned Spotify's design",
+            answer: "React, Redux, CSS, SASS",
+            website:"jiazi.dev/spotify-ui",
+            github: "github.com/JiaziCai/spotify-ui",
         },
         {
             id: 109,
             category_id: 1,
             name: 'Miniflix',
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970806/mf_wuqqle.png",
-            info: "Isomorphic and responsive design web pages of Netflix"
+            info: "Isomorphic and responsive design web pages of Netflix",
+            answer: "React, CSS Grid, Styled-Component",
+            website:"jiazi.dev/Miniflix",
+            github: "github.com/JiaziCai/Miniflix",
         },
     ]
     return (
@@ -98,8 +133,9 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         >
             <TaskMDX />
             {dataPlaylists.map((playlist, id) => (
-            <TaskCard bg="linear-gradient(to right, #0d7be3 0%, #4335a4 100%)">
-            <div className="card" key={id}>
+            <TaskCard bg="linear-gradient(to right, #0d7be3 0%, #4335a4 100%)" playlist={playlist} id={playlist.id}>
+            {/* <div className={`card ${flip ? 'flip' : ''}`}
+            onClick={() => setFlip(!flip)} key={id}>
                     <div className="cardImage" style={{ justifyContent: "center",
     display: "flex"}}>
                         <img src={playlist.image} height="163.8" width="287.4" alt="Pic 1"/>
@@ -108,7 +144,9 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
                         <h3 style={{marginBottom:'0'}}>{playlist.name}</h3>
                         <span>{playlist.info}</span>
                     </div>
-                </div> 
+                    <div className="back" ref={backEl}>{playlist.answer}</div>
+                </div>  */}
+                <SingleTask playlist={playlist} id={playlist.id} />
             </TaskCard>
         ))}
         </div>
