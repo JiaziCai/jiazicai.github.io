@@ -6,10 +6,8 @@
   "author": "LekoArts <hello@lekoarts.de>",
   "license": "MIT",
   "starter-name": "gatsby-starter-portfolio-cara",
-  "homepage": "http://jiazicai.github.io/website",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
@@ -28,7 +26,6 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "gh-pages": "^2.2.0"
+    "cross-env": "^5.2.0"
   }
 }
