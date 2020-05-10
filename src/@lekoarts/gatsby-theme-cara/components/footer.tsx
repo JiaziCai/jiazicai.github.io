@@ -23,12 +23,13 @@ const Footer = () => {
           aria-label="Link to the GitHub repository"
           sx={{ ml: 2 }}
           href="https://github.com/JiaziCai/website"
+          rel="noreferrer noopener"
         >
           Website
         </Link>
         <div sx={{ mx: 1 }}>by</div>
         {` `}
-        <Link aria-label="Link to the Jiazi Cai's website" href="https://jiazi.dev">
+        <Link aria-label="Link to the Jiazi Cai's website" rel="noreferrer noopener" href="https://jiazi.dev">
           Jiazi Cai
         </Link>
       </Flex>

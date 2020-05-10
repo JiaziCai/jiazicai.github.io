@@ -60,8 +60,8 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
       <Inner>
         <div style={{position:"absolute", top:'100px'}}>
         <Intro />
-  <a href="https://github.com/JiaziCai" target="_blank">{!isDark? (<img src={Github} alt="github" height="50px" width="50px" style={{marginRight:'1.5em'}}/>) : (<img src={GithubDark} alt="github" height="50px" width="50px" style={{marginRight:'1.5em'}}/>)}</a>
-        <a href="https://www.linkedin.com/in/caijiazi/" target="_blank">{!isDark ? (<img className="linkedin" src={Linkedin} alt="linkedin" height="50px" width="50px"/>):(<img src={LinkedinDark} alt="linkedin" height="50px" width="50px" style={{marginRight:'1.5em'}}/>)}</a>
+  <a href="https://github.com/JiaziCai" rel="noreferrer noopener" target="_blank">{!isDark? (<img src={Github} alt="github" height="50px" width="50px" style={{marginRight:'1.5em'}}/>) : (<img src={GithubDark} alt="github" height="50px" width="50px" style={{marginRight:'1.5em'}}/>)}</a>
+        <a href="https://www.linkedin.com/in/caijiazi/" rel="noreferrer noopener" target="_blank">{!isDark ? (<img className="linkedin" src={Linkedin} alt="linkedin" height="50px" width="50px"/>):(<img src={LinkedinDark} alt="linkedin" height="50px" width="50px" style={{marginRight:'1.5em'}}/>)}</a>
         </div>
       </Inner>
     </Content>

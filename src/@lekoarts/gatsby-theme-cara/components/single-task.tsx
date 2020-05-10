@@ -30,10 +30,10 @@ export default function SingleTask({playlist}) {
                     <br/>
                     <div className="website">
                         <div style={{display:"flex", justifyContent:"flex-start"}}>
-                    <a className="web" href={"https://" + playlist.website} target="_blank"><button className="linkButton">Website</button></a>
+                    <a className="web" rel="noreferrer noopener" href={"https://" + playlist.website} target="_blank"><button className="linkButton">Website</button></a>
                     </div>
                     {playlist.github && (<div style={{display:"flex", justifyContent:"flex-end"}}>
-                    <a className="git" href={"https://" + playlist.github} target="_blank"><button className="linkButton">Github</button></a>
+                    <a className="git" rel="noreferrer noopener" href={"https://" + playlist.github} target="_blank"><button className="linkButton">Github</button></a>
                     </div>
                     )}
                     </div>
