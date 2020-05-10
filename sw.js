@@ -26,20 +26,28 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9a6f07bba9e5abbd80cc.js"
+    "url": "webpack-runtime-410960891f063aca573f.js"
   },
   {
     "url": "framework-f7f9b643de0d3b0e5da1.js"
   },
   {
-    "url": "app-e2f3d740de7f92c66b66.js"
+    "url": "app-70d3021f79e5fb9cd215.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-7980208c0de083e75dc3.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "b1867f94d2a4920ba11e55c366ab62ee"
+    "revision": "83dd1244a46cf740b8239e2e66398cee"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "c355c8040c47a63bfb3360e4b7cb6553"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "e6bdaad1110169e8f4e020a291dc6d9a"
   },
   {
     "url": "manifest.json",
@@ -47,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "e67ad14cb3692e96202a20cab08594f1"
+    "revision": "1d3b9be213c20ca34fb0471c6e6c5f8d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -66,12 +74,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/jiazicai.github.io`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-e2f3d740de7f92c66b66.js`))) {
+  if (!resources || !(await caches.match(`/jiazicai.github.io/app-70d3021f79e5fb9cd215.js`))) {
     return await fetch(event.request)
   }
 
@@ -84,7 +92,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/jiazicai.github.io/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
