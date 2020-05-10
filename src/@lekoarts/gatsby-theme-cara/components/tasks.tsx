@@ -124,6 +124,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
     <Content speed={0.4} offset={offset + 0.2} factor={factor}>
       <Inner>
         <div
+        className="innerGrid"
           sx={{
             display: `grid`,
             gridGap: [4, 4, 4, 5],

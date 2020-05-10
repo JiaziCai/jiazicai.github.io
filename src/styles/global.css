@@ -71,6 +71,10 @@ button:hover{
     top: 80%;
 }
 
+.innerImage {
+    height: 163.8px; 
+    width: 287.4px;
+}
 
 
 
@@ -78,7 +82,54 @@ button:hover{
     text-decoration: underline;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+    .cardContent span {
+        display: none;
+    }
+    .cardContainer {
+        max-width: 215.55px;
+    }
+    .innerImage {
+        width: 215.55px;
+        height: 122.85px;
+    }
+    .innerGrid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+    }
+    .back {
+        padding-top: 0rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 1rem !important;
+        font-size: 1.1rem !important;
+    }
+    .wholeCard {
+        height: 185px !important;
+    }
+    .cardContainer{
+        height: 200px !important;
+    }
+    .card .front,
+    .card .back {
+        font-size: 1.25rem !important;
+    }
+    .website{
+        font-size: 1rem !important;
+    }
+    h3 {
+        margin-top: 0.25rem !important;
+        font-size: 1.2rem !important;
+    }
+    .flip-card-inner{
+        margin-top: 1rem !important;
+    }
+    .linkButton{
+        height: 30px;
+        width: auto;
+    }
+    }
+
+@media only screen and (min-width:400px) and (max-width:768px) {
 .cardContent span {
     display: none;
 }
@@ -96,7 +147,7 @@ button:hover{
     font-size: 1rem !important;
 }
 h3 {
-    margin-top: 0.5rem !important;
+    margin-top: 0.5rem;
 }
 
 .linkButton{

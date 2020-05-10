@@ -17,7 +17,7 @@ export default function SingleTask({playlist}) {
             <div className="cardContainer">
           <div className="cardImage" style={{ justifyContent: "center",
     display: "flex"}}>
-                        <img src={playlist.image} height="163.8" width="287.4" alt="Pic 1"/>
+                        <img className="innerImage" src={playlist.image} alt="Pic 1"/>
                     </div>
                     <div className="cardContent">
                         <h3 style={{marginBottom:'0'}}>{playlist.name}</h3>
