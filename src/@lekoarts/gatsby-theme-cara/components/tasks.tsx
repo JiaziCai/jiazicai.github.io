@@ -135,8 +135,8 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         >
             <TaskMDX />
             {dataPlaylists.map((playlist, id) => (
-            <TaskCard bg="linear-gradient(to right, #0d7be3 0%, #4335a4 100%)" playlist={playlist} id={playlist.id}>
-                <SingleTask playlist={playlist} id={playlist.id} />
+            <TaskCard bg="linear-gradient(to right, #0d7be3 0%, #4335a4 100%)" playlist={playlist} key={playlist.id} id={playlist.id}>
+                <SingleTask playlist={playlist} key={playlist.id} />
             </TaskCard>
         ))}
         </div>
