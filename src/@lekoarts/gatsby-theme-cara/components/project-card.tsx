@@ -12,6 +12,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ link, title, children, bg, img }: ProjectCardProps) => (
   <a
+  
     href={link}
     target="_blank"
     rel="noreferrer noopener"

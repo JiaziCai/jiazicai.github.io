@@ -105,7 +105,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             id: 109,
             category_id: 1,
             name: 'Miniflix',
-            image: "https://res.cloudinary.com/firebeat/image/upload/q_auto/v1588970806/mf_wuqqle.png",
+            image: "https://res.cloudinary.com/firebeat/image/upload/q_auto/v1589147185/miniflix_nqaiuy.jpg",
             info: "Isomorphic and responsive design web pages of Netflix",
             answer: "React, CSS Grid, Styled-Component",
             website:"jiazicai.github.io/Miniflix",
