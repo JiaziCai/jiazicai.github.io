@@ -26,7 +26,6 @@
     "gatsby-plugin-offline": "^2.2.7",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
-    "react-animated-css": "^1.2.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {

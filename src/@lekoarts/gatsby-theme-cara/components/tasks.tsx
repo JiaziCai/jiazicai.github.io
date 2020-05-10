@@ -38,7 +38,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: 'https://res.cloudinary.com/firebeat/image/upload/v1588970796/fc_ehff3b.png',
             info: "MERN stack project for chat web application",
             answer: "React, Redux, NodeJS, Express, Material UI, Firebase, REST API",
-            website:"jiazi.dev/FruitChat/",
+            website:"jiazicai.github.io/FruitChat/",
             github: "github.com/JiaziCai/FruitChat ",
         },
         {
@@ -48,7 +48,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/tdl_jfukq6.png",
             info: "Add/delete task, categorize task, light/dark mode, accessibility, quick add task",
             answer: "React, Firebase, React Testing Library, SCSS",
-            website:"jiazi.dev/todolist/",
+            website:"jiazicai.github.io/todolist/",
             github: "github.com/JiaziCai/todolist",
         },
         {
@@ -68,7 +68,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970802/sr_ousygu.png",
             info: "Dynamic and responsive shopping website",
             answer: "React, Netlify, Bootstrap, Styled-Component",
-            website:"jiazi.dev/Shop-Ramen/",
+            website:"jiazicai.github.io/Shop-Ramen/",
             github: "github.com/JiaziCai/Shop-Ramen/",
         },
         {
@@ -78,7 +78,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970798/cv_hrd5w9.png",
             info: "Used REST API to fetch data and Chart.js to display COVID-19 data",
             answer: "React, REST API, CSS Modules, Chart.js",
-            website:"jiazi.dev/covid-tracker",
+            website:"jiazicai.github.io/covid-tracker",
             github: "github.com/JiaziCai/covid-tracker",
         },
         {
@@ -88,7 +88,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970800/qg_utwd63.png",
             info: "Used REST API to generate quiz by category and number",
             answer: "React, REST API, CSS Grid",
-            website:"jiazi.dev/quiz-generator",
+            website:"jiazicai.github.io/quiz-generator",
             github: "github.com/JiaziCai/quiz-generator",
         },
         {
@@ -98,7 +98,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970801/sd_fknxsx.png",
             info: "Cloned Spotify's design",
             answer: "React, Redux, CSS, SASS",
-            website:"jiazi.dev/spotify-ui",
+            website:"jiazicai.github.io/spotify-ui",
             github: "github.com/JiaziCai/spotify-ui",
         },
         {
@@ -108,7 +108,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             image: "https://res.cloudinary.com/firebeat/image/upload/v1588970806/mf_wuqqle.png",
             info: "Isomorphic and responsive design web pages of Netflix",
             answer: "React, CSS Grid, Styled-Component",
-            website:"jiazi.dev/Miniflix",
+            website:"jiazicai.github.io/Miniflix",
             github: "github.com/JiaziCai/Miniflix",
         },
     ]
