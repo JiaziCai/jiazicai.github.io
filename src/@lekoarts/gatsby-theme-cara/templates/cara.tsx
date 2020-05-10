@@ -11,11 +11,11 @@ import {Animated} from "react-animated-css";
 
 const Cara = () => (
   <Layout>
-    <Parallax pages={6.3}>
+    <Parallax pages={6.2}>
       <Hero offset={0} factor={1} />
       <Tasks offset={1} factor={2} />
       <About offset={4} factor={1} />
-      <Contact offset={5.4} factor={0} />
+      <Contact offset={5.2} factor={0} />
     </Parallax>
   </Layout>
 )

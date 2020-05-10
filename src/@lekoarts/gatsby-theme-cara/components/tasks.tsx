@@ -146,7 +146,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       <UpDown>
         <SVG icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
         <SVG icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
-        <SVG icon="triangle" width={8} stroke color="icon_orange" left="25%" top="5%" />
+        <SVG icon="triangle" width={8} stroke color="icon_red" left="25%" top="5%" />
         <SVG icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
       </UpDown>
       <UpDownWide>
@@ -160,25 +160,28 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         <SVG icon="circle" hiddenMobile width={32} color="icon_purple" left="5%" top="135%" />
         <SVG icon="circle" hiddenMobile width={8} color="icon_darkest" left="55%" top="165%" />
         <SVG icon="hexa" hiddenMobile width={32} color="icon_red" left="75%" top="120%" />
-        <SVG icon="upDown" hiddenMobile width={32} color="icon_pink" left="25%" top="140%" />
         <SVG icon="circle" width={6} color="icon_brightest" left="75%" top="10%" />
-        <SVG icon="box" hiddenMobile width={8} color="icon_orange" left="45%" top="10%" />
+        <SVG icon="box" hiddenMobile width={8} color="icon_green" left="45%" top="10%" />
         <SVG icon="arrowDown" hiddenMobile width={32} color="icon_blue" left="75%" top="95%" />
         <SVG icon="arrowDown" hiddenMobile width={32} color="icon_blue" left="75%" top="98%" />
         <SVG icon="upDown" hiddenMobile width={32} color="icon_pink" left="45%" top="98%" />
         
         <SVG icon="triangle" hiddenMobile width={12} stroke color="icon_brightest" left="90%" top="180%" />
-        <SVG icon="circle" width={16} color="icon_darker" left="70%" top="160%" />
-        <SVG icon="upDown" width={16} stroke color="icon_darkest" left="30%" top="135%" />
+        <SVG icon="upDown" width={16} stroke color="icon_darkest" left="30%" top="145%" />
         <SVG icon="cross" width={16} stroke color="icon_pink" left="10%" top="190%" />
         <SVG icon="circle" width={6} color="icon_darkest" left="75%" top="177%" />
+        <SVG icon="cross" width={75} stroke color="icon_pink" left="10%" top="105%" />
+        <SVG icon="triangle" hiddenMobile stroke width={12} stroke color="icon_brightest" left="90%" top="200%" />
+        <SVG icon="hexa" width={16} stroke color="icon_darkest" left="30%" top="125%" />
+        <SVG icon="cross" width={16} stroke color="icon_pink" left="10%" top="130%" />
+        <SVG icon="circle" width={6} color="icon_darkest" left="75%" top="147%" />
       </UpDownWide>
       <SVG icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <SVG icon="circle" width={12} color="icon_pink" left="80%" top="60%" />
       <SVG icon="box" width={6} color="icon_orange" left="10%" top="10%" />
       <SVG icon="box" width={12} color="icon_yellow" left="29%" top="26%" />
-      <SVG icon="hexa" width={16} stroke color="icon_red" left="75%" top="30%" />
-      <SVG icon="hexa" width={8} stroke color="icon_yellow" left="80%" top="70%" />
+      <SVG icon="hexa" width={16} stroke color="icon_yellow" left="75%" top="30%" />
+      <SVG icon="hexa" width={8} stroke color="icon_green" left="80%" top="70%" />
       <SVG icon="hexa" width={8} stroke color="icon_red" left="60%" top="80%" />
     </Divider>
   </div>
