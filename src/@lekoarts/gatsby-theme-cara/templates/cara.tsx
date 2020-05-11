@@ -10,7 +10,7 @@ import {Animated} from "react-animated-css";
  
 
 const Cara = () => {
-  const isMobile = window.innerWidth >1024;
+  const isMobile = typeof window !== 'undefined' && window.innerWidth >1024;
   const showAbout = isMobile ? 3 : 4;
   const showContact = isMobile ? 4 : 5.5;
   const showPage = isMobile ?  5.04: 6.5;
