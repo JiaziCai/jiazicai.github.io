@@ -152,7 +152,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       <UpDownWide>
         <SVG icon="arrowUp" hiddenMobile width={16} color="icon_green" left="20%" top="90%" />
         <SVG icon="triangle" width={12} stroke color="icon_brightest" left="90%" top="30%" />
-        <SVG icon="circle" width={16} color="icon_yellow" left="70%" top="90%" />
+        {/* <SVG icon="circle" width={16} color="icon_yellow" left="70%" top="90%" /> */}
         <SVG icon="arrowDown" hiddenMobile width={48} color="icon_blue" left="70%" top="150%" />
         <SVG icon="arrowDown" hiddenMobile width={48} color="icon_blue" left="70%" top="155%" />
         <SVG icon="triangle" hiddenMobile width={16} stroke color="icon_teal" left="18%" top="175%" />
