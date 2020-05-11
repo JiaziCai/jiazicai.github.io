@@ -55,7 +55,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             id: 104,
             category_id: 1,
             name: 'Pixaland',
-            image: "https://res.cloudinary.com/firebeat/image/upload/q_auto/v1588970804/pl_ughfk1.png",
+            image: "https://res.cloudinary.com/firebeat/image/upload/q_auto/v1589222091/pixaland_ngzrdh.jpg",
             info: "Upload photo, search photo, add photographer, search photographer",
             answer: "Node, MongoDB, EJS, Heroku",
             website:"pixaland.herokuapp.com",

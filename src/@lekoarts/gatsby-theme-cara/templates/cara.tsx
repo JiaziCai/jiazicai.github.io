@@ -11,16 +11,22 @@ import {Animated} from "react-animated-css";
 
 const Cara = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth >1024;
-  const showAbout = isMobile ? 3 : 4;
-  const showContact = isMobile ? 4 : 5.5;
-  const showPage = isMobile ?  5.04: 6.5;
+  const isBigScreen = typeof window !== 'undefined' && window.innerWidth >= 1568;
+  const showTask = isBigScreen ? 1 : 1;
+  const showAbout = isMobile ? (isBigScreen ? 2.3 : 3): 4;
+  const heroFactor = isBigScreen ? 1 : 1;
+  const taskFactor = isBigScreen ? 1 : 2;
+  const aboutFactor = isBigScreen ? 0.5 : 1;
+  const showContact = isMobile ? (isBigScreen ? 2.9 : 4): 5.5;
+  const showPage = isMobile ?  (isBigScreen ? 3.17 : 5.04): 6.5;
+  const contactFactor = isBigScreen ? 0.3 : 1;
   return (
   <Layout>
     <Parallax pages={showPage}>
-      <Hero offset={0} factor={1} />
-      <Tasks offset={1} factor={2} />
-      <About offset={showAbout} factor={1} />
-      <Contact offset={showContact} factor={0} />
+      <Hero offset={0} factor={heroFactor} />
+      <Tasks offset={showTask} factor={taskFactor} />
+      <About offset={showAbout} factor={aboutFactor} />
+      <Contact offset={showContact} factor={contactFactor} />
     </Parallax>
   </Layout>
 )
