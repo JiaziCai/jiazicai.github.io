@@ -129,7 +129,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             display: `grid`,
             gridGap: [4, 4, 4, 5],
             gridTemplateColumns: [`repeat(auto-fit, minmax(320px, 1fr))`],
-            h2: { gridColumn: `-1/1`, color: `black !important`, paddingLeft:`2rem` },
+            h2: { gridColumn: `-1/1`, paddingLeft:`2rem` },
             justifyContent:`center`
           }}
         >
