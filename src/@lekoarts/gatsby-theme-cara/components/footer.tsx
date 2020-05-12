@@ -30,7 +30,7 @@ const Footer = () => {
         <div sx={{ mx: 1 }}>by</div>
         {` `}
         <Link aria-label="Link to the Jiazi Cai's website" rel="noreferrer noopener" href="#head">
-          Jiazi Cai
+          Jiazi Cai🔺
         </Link>
       </Flex>
     </Box>
