@@ -6,8 +6,6 @@ import Projects from "../components/projects"
 import About from "../components/about"
 import Contact from "../components/contact"
 import Tasks from "../components/tasks"
-import {Animated} from "react-animated-css";
- 
 
 const Cara = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth >1024;
