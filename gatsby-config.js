@@ -4,10 +4,14 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
     siteTitleAlt: `Jiazi Cai | Full Stack Developer`,
+    siteTitle: `Jiazi Cai`,
+    siteHeadline: `Full Stack Developer with 2 years' Experience in MERN Stack`,
+    siteUrl: `https://jiazi.dev`,
+    siteDescription: `Jiazi Cai's portfolio for full stack applications`,
+    siteLanguage: `en`,
+    siteImage: `/android-chrome-512x512.png`,
+    author: `Jiazi Cai`,
   },
   plugins: [
     {
