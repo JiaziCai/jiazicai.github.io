@@ -32,6 +32,28 @@ button:hover{
     background: transparent;
 }
 
+.cardButton{
+    height: 75px;
+    width: 110px;
+    /* color: white; */
+    font-size: 1rem;
+    border: 5px solid #c05621;
+    padding: 0;
+    position: relative;
+    margin: auto;
+    background: transparent;
+}
+
+.cardButtonActive{
+    height: 75px;
+    width: 110px;
+    /* color: white; */
+    font-size: 1rem;
+    border: 5px solid #c05621;
+    padding: 0;
+    background: #c05621;
+}
+
 
 .card .front {
     left: 0;
@@ -127,6 +149,14 @@ button:hover{
         height: 30px;
         width: auto;
     }
+    .cardButton{
+        height: 30px;
+        width: auto;
+    }
+    .cardButtonActive{
+        height: 30px;
+        width: auto;
+    }
     }
 
 @media only screen and (min-width:400px) and (max-width:768px) {
@@ -151,6 +181,14 @@ h3 {
 }
 
 .linkButton{
+    height: 30px;
+    width: auto;
+}
+.cardButton{
+    height: 30px;
+    width: auto;
+}
+.cardButtonActive{
     height: 30px;
     width: auto;
 }
