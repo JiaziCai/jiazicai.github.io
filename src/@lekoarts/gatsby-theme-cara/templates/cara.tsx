@@ -23,6 +23,7 @@ const Cara = () => {
   return (
   <Layout>
     <Parallax pages={showPage}>
+      <a name="head"></a>
       <Hero offset={0} factor={heroFactor} />
       <Tasks offset={showTask} factor={taskFactor} />
       <About offset={showAbout} factor={aboutFactor} />
