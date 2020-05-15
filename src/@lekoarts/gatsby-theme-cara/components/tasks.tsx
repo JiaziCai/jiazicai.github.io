@@ -193,7 +193,6 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         <SVG icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
       </UpDown>
       <UpDownWide>
-        <SVG icon="arrowUp" hiddenMobile width={16} color="icon_green" left="20%" top="90%" />
         <SVG icon="triangle" width={12} stroke color="icon_brightest" left="90%" top="30%" />
         <SVG icon="arrowDown" hiddenMobile width={48} color="icon_blue" left="70%" top="150%" />
         <SVG icon="arrowDown" hiddenMobile width={48} color="icon_blue" left="70%" top="155%" />
@@ -206,16 +205,14 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         <SVG icon="box" hiddenMobile width={8} color="icon_green" left="45%" top="10%" />
         <SVG icon="arrowDown" hiddenMobile width={32} color="icon_blue" left="75%" top="95%" />
         <SVG icon="arrowDown" hiddenMobile width={32} color="icon_blue" left="75%" top="98%" />
-        <SVG icon="upDown" hiddenMobile width={32} color="icon_pink" left="45%" top="98%" />
         
         <SVG icon="triangle" hiddenMobile width={12} stroke color="icon_brightest" left="90%" top="180%" />
         <SVG icon="upDown" width={16} stroke color="icon_darkest" left="30%" top="145%" />
-        <SVG icon="cross" width={16} stroke color="icon_pink" left="10%" top="190%" />
         <SVG icon="circle" width={6} color="icon_darkest" left="75%" top="177%" />
         <SVG icon="cross" width={75} stroke color="icon_pink" left="10%" top="105%" />
         <SVG icon="triangle" hiddenMobile stroke width={12} stroke color="icon_brightest" left="90%" top="200%" />
         <SVG icon="hexa" width={16} stroke color="icon_darkest" left="30%" top="125%" />
-        <SVG icon="cross" width={16} stroke color="icon_pink" left="10%" top="130%" />
+        {/* <SVG icon="cross" width={16} stroke color="icon_pink" left="10%" top="130%" /> */}
         <SVG icon="circle" width={6} color="icon_darkest" left="75%" top="147%" />
       </UpDownWide>
       <SVG icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
