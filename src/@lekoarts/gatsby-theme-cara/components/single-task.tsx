@@ -26,7 +26,7 @@ export default function SingleTask({playlist}) {
                     </div>
           </div>
           <div className="flip-card-back">
-          <div className="back" ref={backEl}>{playlist.answer}
+          <div className="back" ref={backEl}><span>{playlist.answer}</span>
                     <br/>
                     <div className="website">
                         <div style={{display:"flex", justifyContent:"flex-start"}}>

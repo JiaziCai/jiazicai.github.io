@@ -36,7 +36,6 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <SVG icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <SVG icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
       <SVG icon="box" width={6} color="icon_orange" left="10%" top="10%" />
-      <SVG icon="box" width={32} color="icon_darkest" left="29%" top="30%" />
       <SVG icon="hexa" width={8} stroke color="icon_darkest" left="80%" top="70%" />
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>

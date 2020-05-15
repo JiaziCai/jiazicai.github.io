@@ -148,7 +148,6 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
     return (
   <div>
     <Divider
-      bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
       sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
       speed={-0.2}
       offset={1.1}
@@ -166,6 +165,8 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
             justifyContent:`center`,
             p: {gridColumn: `-1/1`, display: `inline-flex`, margin:`1rem` },
             button: {color:`heading`},
+            h3: {color: `heading`},
+            span: {color: `heading`}
           }}
         >
           <TaskMDX />
@@ -177,7 +178,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
                 }
             </div>
             {dataPlaylists.filter(name => name.tech.includes(card)).map((playlist, id) => (
-            <TaskCard bg="linear-gradient(to right, #0d7be3 0%, #4335a4 100%)" playlist={playlist} key={playlist.id} id={playlist.id}>
+            <TaskCard playlist={playlist} key={playlist.id} id={playlist.id}>
                 <SingleTask playlist={playlist} key={playlist.id} />
             </TaskCard>
         ))}
