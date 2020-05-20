@@ -85,8 +85,9 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       image:
         "https://res.cloudinary.com/firebeat/image/upload/v1589225659/sr_xzuzm9.jpg",
       info: "Dynamic and responsive shopping website",
-      answer: "React, Netlify, Bootstrap, Styled-Component",
-      website: "https://shop-ramen.netlify.app/",
+      answer:
+        "React, Redux, Gatsby, Netlify, Bootstrap, Contentful, Styled-Component",
+      website: "shop-ramen.netlify.app/",
       github: "github.com/JiaziCai/Shop-Ramen/"
     },
     {
