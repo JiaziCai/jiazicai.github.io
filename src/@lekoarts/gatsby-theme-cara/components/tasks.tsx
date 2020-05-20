@@ -53,6 +53,19 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       github: "github.com/JiaziCai/FruitChat "
     },
     {
+      id: 105,
+      category_id: 2,
+      name: "Shop Ramen",
+      tech: ["All", "React", "Netlify", "UI/UX"],
+      image:
+        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/sr_xzuzm9.jpg",
+      info: "Dynamic and responsive shopping website",
+      answer:
+        "React, Redux, Gatsby, Netlify, Bootstrap, Contentful, Styled-Component",
+      website: "shop-ramen.netlify.app/",
+      github: "github.com/JiaziCai/Shop-Ramen/"
+    },
+    {
       id: 103,
       category_id: 2,
       name: "To Do List",
@@ -76,19 +89,6 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       answer: "Node, MongoDB, EJS, Heroku",
       website: "pixaland.herokuapp.com",
       github: "github.com/JiaziCai/pixaland"
-    },
-    {
-      id: 105,
-      category_id: 2,
-      name: "Shop Ramen",
-      tech: ["All", "React", "Netlify", "UI/UX"],
-      image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/sr_xzuzm9.jpg",
-      info: "Dynamic and responsive shopping website",
-      answer:
-        "React, Redux, Gatsby, Netlify, Bootstrap, Contentful, Styled-Component",
-      website: "shop-ramen.netlify.app/",
-      github: "github.com/JiaziCai/Shop-Ramen/"
     },
     {
       id: 106,
