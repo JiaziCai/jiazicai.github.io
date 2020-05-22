@@ -58,7 +58,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "Shop Ramen",
       tech: ["All", "React", "Netlify", "UI/UX"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/sr_xzuzm9.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590184634/newssr_xfppbd.jpg",
       info: "Dynamic and responsive shopping website",
       answer:
         "React, Redux, Gatsby, Netlify, Bootstrap, Contentful, Styled-Component",
