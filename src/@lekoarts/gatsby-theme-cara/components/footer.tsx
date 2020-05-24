@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { Box, jsx, Flex, Link } from "theme-ui"
-import Logo from "../../../../static/android-chrome-512x512.png"
+import { Box, jsx, Flex, Link } from "theme-ui";
+import Logo from "../../../../static/android-chrome-192x192.png";
 
 const Footer = () => {
   return (
-    <Box as="footer" variant="footer">
+    <Box as='footer' variant='footer'>
       Copyright &copy; {new Date().getFullYear()}. Made with Gatsby.
       <br />
       <Flex
@@ -14,27 +14,31 @@ const Footer = () => {
           mt: 3,
           color: `text`,
           fontWeight: `semibold`,
-          a: { color: `text` },
+          a: { color: `text` }
         }}
       >
-        <img width="30" height="30" src={Logo} alt="Jiazi Cai Logo" />
+        <img width='30' height='30' src={Logo} alt='Jiazi Cai Logo' />
         {` `}
         <Link
-          aria-label="Link to the GitHub repository"
+          aria-label='Link to the GitHub repository'
           sx={{ ml: 2 }}
-          href="https://github.com/JiaziCai/website"
-          rel="noreferrer noopener"
+          href='https://github.com/JiaziCai/website'
+          rel='noreferrer noopener'
         >
           Website
         </Link>
         <div sx={{ mx: 1 }}>by</div>
         {` `}
-        <Link aria-label="Link to the Jiazi Cai's website" rel="noreferrer noopener" href="#head">
+        <Link
+          aria-label="Link to the Jiazi Cai's website"
+          rel='noreferrer noopener'
+          href='#head'
+        >
           Jiazi Cai🔺
         </Link>
       </Flex>
     </Box>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
