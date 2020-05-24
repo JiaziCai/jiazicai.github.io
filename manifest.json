@@ -1,6 +1,7 @@
 {
   "main.js": "render-page.js",
   "main.js.map": "render-page.js.map",
+  "static/android-chrome-192x192.png": "static/android-chrome-192x192-1a6906635f7e4bc61f00fdd0c68568d5.png",
   "static/android-chrome-512x512.png": "static/android-chrome-512x512-2154e79cb5afd30d9f405eae3041cf6a.png",
   "static/github-dark.png": "static/github-dark-696ef938197d1049c86c9dce601afded.png",
   "static/github.png": "static/github-762e74309d87ba52252ced6ed0cfef95.png",
