@@ -1,5 +1,5 @@
-import { merge } from "theme-ui"
-import { tailwind } from "@theme-ui/presets"
+import { merge } from "theme-ui";
+import { tailwind } from "@theme-ui/presets";
 
 const theme = merge(tailwind, {
   initialColorModeName: `light`,
@@ -32,9 +32,9 @@ const theme = merge(tailwind, {
         textMuted: tailwind.colors.gray[6],
         icon_brightest: tailwind.colors.gray[2],
         icon_darker: tailwind.colors.gray[4],
-        icon_darkest: tailwind.colors.gray[6],
-      },
-    },
+        icon_darkest: tailwind.colors.gray[6]
+      }
+    }
   },
   breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
   footer: {
@@ -44,7 +44,7 @@ const theme = merge(tailwind, {
     bottom: 0,
     color: `textMuted`,
     px: [2, 3],
-    py: [3, 4],
+    py: [3, 4]
   },
   styles: {
     root: {
@@ -62,9 +62,9 @@ const theme = merge(tailwind, {
         transition: `all 0.3s ease-in-out`,
         "&:hover": {
           color: `primary`,
-          textDecoration: `none`,
-        },
-      },
+          textDecoration: `none`
+        }
+      }
     },
     p: {
       fontSize: [1, 2],
@@ -72,15 +72,15 @@ const theme = merge(tailwind, {
       lineHeight: `body`,
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
-      color: `text`,
+      color: `text`
     },
     blockquote: {
       marginLeft: 0,
       p: {
         fontSize: [2, 3],
         fontWeight: `medium`,
-        color: `heading`,
-      },
+        color: `heading`
+      }
     },
     h1: {
       fontSize: [6, 7, 8],
@@ -88,37 +88,37 @@ const theme = merge(tailwind, {
       mb: 3,
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `wide`,
-      color: `heading`,
+      color: `heading`
     },
     h2: {
       fontSize: [4, 5, 6],
       mt: 2,
       mb: 2,
-      color: `heading`,
+      color: `heading`
     },
     h3: {
       fontSize: [3, 4, 5],
       mt: 3,
-      color: `heading`,
+      color: `heading`
     },
     h4: {
       fontSize: [2, 3, 4],
-      color: `heading`,
+      color: `heading`
     },
     h5: {
       fontSize: [1, 2, 3],
-      color: `heading`,
+      color: `heading`
     },
     h6: {
       fontSize: 1,
       mb: 2,
-      color: `heading`,
-    },
+      color: `heading`
+    }
   },
   layout: {
     container: {
-      maxWidth: `5xl`,
-    },
+      maxWidth: `5xl`
+    }
   },
   buttons: {
     toggle: {
@@ -129,16 +129,16 @@ const theme = merge(tailwind, {
       alignSelf: `center`,
       px: 3,
       py: 2,
-      ml: 3,
-    },
+      ml: 3
+    }
   },
   texts: {
     bigger: {
       p: {
-        fontSize: [2, 3, 4],
-      },
-    },
-  },
-})
+        fontSize: [2, 3, 4]
+      }
+    }
+  }
+});
 
-export default theme
+export default theme;

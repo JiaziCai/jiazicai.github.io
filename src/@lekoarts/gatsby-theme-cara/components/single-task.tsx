@@ -12,7 +12,7 @@ export default function SingleTask({ playlist }) {
   const isBig = typeof window !== "undefined" && window.innerWidth >= 400;
 
   const MyImage = (
-    <div>
+    <>
       (
       {isBig ? (
         <LazyLoadImage
@@ -32,7 +32,7 @@ export default function SingleTask({ playlist }) {
         />
       )}
       )
-    </div>
+    </>
   );
 
   return (
