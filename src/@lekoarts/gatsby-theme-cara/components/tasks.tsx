@@ -24,7 +24,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       tech: ["All", "React", "redux", "MongoDB", "Node", "GraphQL"],
       name: "ALIVE",
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/newAlive_bbl5sv.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newAlive_bbh8tu.jpg",
       info:
         "Developing E-learning platform for New York University with MERN stack",
       answer: "MongoDB, Express, React/Redux, Node, GraphQL",
@@ -46,7 +46,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         "REST API"
       ],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225658/fc_o3qjah.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/fc_efh5yy.jpg",
       info: "MERN stack project for chat web application",
       answer: "React, Redux, NodeJS, Express, Material UI, Firebase, REST API",
       website: "jiazicai.github.io/FruitChat/",
@@ -58,7 +58,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "Shop Ramen",
       tech: ["All", "React", "Netlify", "UI/UX"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1590184634/newssr_xfppbd.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newssr_pbxxia.jpg",
       info: "Dynamic and responsive shopping website",
       answer:
         "React, Redux, Gatsby, Netlify, Bootstrap, Contentful, Styled-Component",
@@ -71,7 +71,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "To Do List",
       tech: ["All", "React", "Firebase", "SCSS"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/tdl_wdpfav.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296269/tdl_wf7zbz.jpg",
       info:
         "Add/delete task, categorize task, light/dark mode, accessibility, quick add task",
       answer: "React, Firebase, React Testing Library, SCSS",
@@ -84,7 +84,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "Pixaland",
       tech: ["All", "React", "Node", "MongoDB", "Heroku"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/pl_ty5o0w.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/pl_wppps8.jpg",
       info: "Upload photo, search photo, add photographer, search photographer",
       answer: "Node, MongoDB, EJS, Heroku",
       website: "pixaland.herokuapp.com",
@@ -96,7 +96,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "COVID Tracker",
       tech: ["All", "REST API", "React", "Data Vis"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225658/newCovid-19_qmqf3c.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newCovid-19_jkuyfz.jpg",
       info: "Used REST API to fetch data and Chart.js to display COVID-19 data",
       answer: "React, REST API, CSS Modules, Chart.js",
       website: "jiazicai.github.io/covid-tracker",
@@ -108,7 +108,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "Quiz Generator",
       tech: ["All", "REST API", "React", "UI/UX"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/qg_m4rx6w.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/qg_il4c2f.jpg",
       info: "Used REST API to generate quiz by category and number",
       answer: "React, REST API, CSS Grid",
       website: "jiazicai.github.io/quiz-generator",
@@ -120,7 +120,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "Spotify Redesign",
       tech: ["All", "React", "Redux", "UI/UX"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/sd_gdblly.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296269/sd_nkdxxb.jpg",
       info: "Cloned Spotify's design",
       answer: "React, Redux, CSS, SASS",
       website: "jiazicai.github.io/spotify-ui",
@@ -132,7 +132,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       name: "Miniflix",
       tech: ["All", "React", "UI/UX"],
       image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1589225659/newMiniflix_lnt15r.jpg",
+        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newMiniflix_h5qaeb.jpg",
       info: "Isomorphic and responsive design web pages of Netflix",
       answer: "React, CSS Grid, Styled-Component",
       website: "jiazicai.github.io/Miniflix",

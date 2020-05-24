@@ -12,7 +12,7 @@ const Cara = () => {
   const isBigScreen =
     typeof window !== "undefined" && window.innerWidth >= 1568;
   const showTask = isBigScreen ? 1 : 1;
-  const showAbout = isMobile ? (isBigScreen ? 2.3 : 3.2) : 4;
+  const showAbout = isMobile ? (isBigScreen ? 2.3 : 3.3) : 4;
   const heroFactor = isBigScreen ? 1 : 1;
   const taskFactor = isBigScreen ? 1 : 2;
   const aboutFactor = isBigScreen ? 0.5 : 1;
