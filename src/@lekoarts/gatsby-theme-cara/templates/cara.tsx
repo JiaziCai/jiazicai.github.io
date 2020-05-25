@@ -50,7 +50,7 @@ class Cara extends Component<MyProps, MyState> {
     const taskFactor = isBigScreen ? 1 : 2;
     const aboutFactor = isBigScreen ? 0.7 : 1;
     const showContact = isMobile ? (isBigScreen ? 3.9 : 4) : 5.5;
-    const showPage = isMobile ? (isBigScreen ? 4.6 : 5.04) : 6.5;
+    const showPage = isMobile ? (isBigScreen ? 4.55 : 5.04) : 6.5;
     const contactFactor = isBigScreen ? 0.75 : 1;
     return (
       <Layout>
