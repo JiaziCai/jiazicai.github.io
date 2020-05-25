@@ -13,7 +13,6 @@ export default function SingleTask({ playlist }) {
 
   const MyImage = (
     <>
-      (
       {isBig ? (
         <LazyLoadImage
           alt={playlist.name}
@@ -31,7 +30,6 @@ export default function SingleTask({ playlist }) {
           src={playlist.image} // use normal <img> attributes as props
         />
       )}
-      )
     </>
   );
 
