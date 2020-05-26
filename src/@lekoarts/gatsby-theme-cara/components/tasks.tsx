@@ -32,6 +32,19 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       github: ""
     },
     {
+      id: 108,
+      category_id: 1,
+      name: "Spotify Data Vis",
+      tech: ["All", "React", "Redux", "REST API", "Node", "UI/UX"],
+      image:
+        "https://res.cloudinary.com/firebeat/image/upload/v1590525737/newsdv_mu4n6b.jpg",
+      info:
+        "Get user's profile and playlist, recommend songs based on user preference",
+      answer: "React, Node, REST API, Styled-Component, Mixins",
+      website: "spotify-datavis.herokuapp.com/",
+      github: "github.com/JiaziCai/spotify-ui"
+    },
+    {
       id: 102,
       category_id: 1,
       name: "Fruit Chat",
@@ -113,18 +126,6 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       answer: "React, REST API, CSS Grid",
       website: "jiazicai.github.io/quiz-generator",
       github: "github.com/JiaziCai/quiz-generator"
-    },
-    {
-      id: 108,
-      category_id: 1,
-      name: "Spotify Redesign",
-      tech: ["All", "React", "Redux", "UI/UX"],
-      image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1590296269/sd_nkdxxb.jpg",
-      info: "Cloned Spotify's design",
-      answer: "React, Redux, CSS, SASS",
-      website: "jiazicai.github.io/spotify-ui",
-      github: "github.com/JiaziCai/spotify-ui"
     },
     {
       id: 109,
