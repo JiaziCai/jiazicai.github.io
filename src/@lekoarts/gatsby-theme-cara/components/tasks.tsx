@@ -21,7 +21,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
     {
       id: 101,
       category_id: 1,
-      tech: ["All", "React", "redux", "MongoDB", "Node", "GraphQL"],
+      tech: ["All", "React", "redux", "Node", "GraphQL"],
       name: "ALIVE",
       image:
         "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newAlive_bbh8tu.jpg",
@@ -35,7 +35,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       id: 108,
       category_id: 1,
       name: "Spotify Data Vis",
-      tech: ["All", "React", "Redux", "REST API", "Node", "UI/UX"],
+      tech: ["All", "React", "Redux", "Data Viz", "REST API", "Node", "UI/UX"],
       image:
         "https://res.cloudinary.com/firebeat/image/upload/v1590525737/newsdv_mu4n6b.jpg",
       info:
@@ -107,7 +107,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       id: 106,
       category_id: 3,
       name: "COVID Tracker",
-      tech: ["All", "REST API", "React", "Data Vis"],
+      tech: ["All", "REST API", "Data Viz", "React", "Data Vis"],
       image:
         "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newCovid-19_jkuyfz.jpg",
       info: "Used REST API to fetch data and Chart.js to display COVID-19 data",
@@ -160,7 +160,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
     },
     {
       id: 195,
-      name: "MongoDB"
+      name: "Data Viz"
     },
     {
       id: 196,
