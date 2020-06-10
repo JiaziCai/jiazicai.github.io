@@ -74,7 +74,6 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
         "https://res.cloudinary.com/firebeat/image/upload/v1591814108/lf_bltqhw.jpg",
       info: "React Native app for selling furnitures",
       answer: "React, React Native, Node, NPM, Expo",
-      // website: "jiazicai.github.io/Miniflix",
       github: "github.com/JiaziCai/letgo-furniture"
     },
     {
