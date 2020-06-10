@@ -42,7 +42,6 @@ export default function SingleTask({ playlist }) {
               className='cardImage'
               style={{ justifyContent: "center", display: "flex" }}
             >
-              {/* <img className='innerImage' src={playlist.image} alt='Pic 1' /> */}
               {MyImage}
             </div>
             <div className='cardContent'>
@@ -56,16 +55,18 @@ export default function SingleTask({ playlist }) {
             <span>{playlist.answer}</span>
             <br />
             <div className='website'>
-              <div style={{ display: "flex", justifyContent: "flex-start" }}>
-                <a
-                  className='web'
-                  rel='noreferrer noopener'
-                  href={"https://" + playlist.website}
-                  target='_blank'
-                >
-                  <button className='linkButton'>Website</button>
-                </a>
-              </div>
+              {playlist.website && (
+                <div style={{ display: "flex", justifyContent: "flex-start" }}>
+                  <a
+                    className='web'
+                    rel='noreferrer noopener'
+                    href={"https://" + playlist.website}
+                    target='_blank'
+                  >
+                    <button className='linkButton'>Website</button>
+                  </a>
+                </div>
+              )}
               {playlist.github && (
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
                   <a

@@ -66,6 +66,18 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       github: "github.com/JiaziCai/FruitChat "
     },
     {
+      id: 109,
+      category_id: 1,
+      name: "Letgo Furniture",
+      tech: ["All", "React", "UI/UX", "Mobile", "Node"],
+      image:
+        "https://res.cloudinary.com/firebeat/image/upload/v1591814108/lf_bltqhw.jpg",
+      info: "React Native app for selling furnitures",
+      answer: "React, React Native, Node, NPM, Expo",
+      // website: "jiazicai.github.io/Miniflix",
+      github: "github.com/JiaziCai/letgo-furniture"
+    },
+    {
       id: 105,
       category_id: 2,
       name: "Shop Ramen",
@@ -126,18 +138,6 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
       answer: "React, REST API, CSS Grid",
       website: "jiazicai.github.io/quiz-generator",
       github: "github.com/JiaziCai/quiz-generator"
-    },
-    {
-      id: 109,
-      category_id: 1,
-      name: "Miniflix",
-      tech: ["All", "React", "UI/UX"],
-      image:
-        "https://res.cloudinary.com/firebeat/image/upload/v1590296268/newMiniflix_h5qaeb.jpg",
-      info: "Isomorphic and responsive design web pages of Netflix",
-      answer: "React, CSS Grid, Styled-Component",
-      website: "jiazicai.github.io/Miniflix",
-      github: "github.com/JiaziCai/Miniflix"
     }
   ];
 
