@@ -34,7 +34,7 @@ const Tasks = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {
     {
       id: 108,
       category_id: 1,
-      name: "Spotify Data Vis",
+      name: "Spotify Data Viz",
       tech: ["All", "React", "Redux", "Data Viz", "REST API", "Node", "UI/UX"],
       image:
         "https://res.cloudinary.com/firebeat/image/upload/v1590525737/newsdv_mu4n6b.jpg",
